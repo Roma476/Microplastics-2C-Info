@@ -251,6 +251,13 @@ main {
     border-style: solid;
     border-radius: 0.5dvh;
     gap: 2dvh;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.coppia:hover {
+    transform: translateY(-0.5dvh);
+    box-shadow: 0 3dvh 2dvh rgba(0, 0, 0, 0.15);
+    border-color: skyblue;
 }
 
 .coppia a {
