@@ -1,1 +1,5 @@
 @import url('style-comune.css');
+
+header img {
+    width: 100%;
+}
