@@ -335,7 +335,7 @@ main {
   opacity: 0;
   transition: opacity 0.5s, transform 0.5s;
   transform: translateY(10px);
-  z-index: 2;
+  z-index: 99;
 }
 
 .tooltip::after {
@@ -347,6 +347,7 @@ main {
   border-width: 5px;
   border-style: solid;
   border-color: #333 transparent transparent transparent;
+  z-index: 99;
 }
 
 .tooltip-container:hover .tooltip {
@@ -354,6 +355,7 @@ main {
   opacity: 1;
   transform: translateY(0);
   animation: bounce 0.6s ease;
+  z-index: 99;
 }
 
 @keyframes bounce {
