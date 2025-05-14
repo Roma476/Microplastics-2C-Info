@@ -1,0 +1,66 @@
+@import url('../style-comune.css');
+
+/* HEADER e TITOLO*/
+
+header {
+    height: 10dvh;
+    background-color: #e0f2ff;
+}
+
+#Titolo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10dvh;
+    background-color: #e0f2ff;
+}
+
+#Titolo img {
+    margin-left: 10dvh;
+    margin-bottom: 4dvh;
+    width: 50dvh;
+    height: 50dvh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Titolo-text {
+    display: flex;
+    flex-direction: column; 
+}
+
+.Titolo-text h1 {
+    font-size: 7dvh;
+}
+
+.Titolo-text h2 {
+    font-size: 3dvh;
+}
+
+
+/* PARTE 1*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20dvh;
+    margin-right: 20dvh;
+}
+
+.sezione1 {
+    margin-top: 7dvh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    max-width: 70%;
+    font-size: 1.8dvh;
+    line-height: 1.6;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3dvh;
+}

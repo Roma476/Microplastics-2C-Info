@@ -1,0 +1,118 @@
+@import url('../style-comune.css');
+
+/*HEADER e TITOLO*/
+
+header {
+    height: 10dvh;
+    background-color: #e0f2ff;
+}
+
+#Titolo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10dvh;
+    background-color: #e0f2ff;
+    margin-bottom: 5dvh;
+}
+
+#Titolo img {
+    margin-left: 10dvh;
+    margin-bottom: 4dvh;
+    width: 50dvh;
+    height: 50dvh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Titolo-text {
+    display: flex;
+    flex-direction: column; 
+    color: black;
+}
+
+.Titolo-text h1 {
+    font-size: 7dvh;
+}
+
+.Titolo-text h2 {
+    font-size: 3dvh;
+}
+
+main {
+    margin-bottom: 5dvh;
+}
+
+#titolo_1, #paragrafo_1, #paragrafo_2, #paragrafo_3 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+@media screen and (max-width: 1509px) {
+    #Titolo {
+      flex-direction: column;
+      gap: 4dvh;
+      padding: 3dvh;
+      text-align: center;
+    }
+  
+    #Titolo img {
+      width: 45dvh;
+      height: 45dvh;
+    }
+  
+    .Titolo-text h1 {
+      font-size: 6dvh;
+    }
+  
+    .Titolo-text h2 {
+      font-size: 2.5dvh;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #Titolo {
+      flex-direction: column;
+      gap: 3dvh;
+      padding: 2dvh;
+      text-align: center;
+    }
+  
+    #Titolo img {
+      margin: 0;
+      width: 40dvh;
+      height: 40dvh;
+    }
+  
+    .Titolo-text h1 {
+      font-size: 5dvh;
+    }
+  
+    .Titolo-text h2 {
+      font-size: 2.2dvh;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #Titolo img {
+      width: 30dvh;
+      height: 30dvh;
+    }
+  
+    .Titolo-text h1 {
+      font-size: 4.2dvh;
+    }
+  
+    .Titolo-text h2 {
+      font-size: 1.8dvh;
+    }
+  } 
