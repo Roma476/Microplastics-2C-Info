@@ -37,42 +37,53 @@ header {
 
 /* PAGINA */
 
+#pre-intro {
+    display: flex;
+    align-items: center;
+    margin: 5dvh;
+    margin-left: 10dvh;
+    margin-right: 10dvh;
+}
+
+#pre-intro h3 {
+    font-size: 2.7dvh;
+    text-align: center;
+}
+
 section.intro {
     display: flex;
-    justify-content: center; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 20dvh; /* Imposta l'altezza della sezione come il 20% dell'altezza del viewport */
+    justify-content: center; 
+    align-items: center; 
+    height: 20dvh; 
     background-color: #f1f1f1;
-    padding: 2dvh; /* Padding dinamico in base all'altezza del viewport */
-    margin: 3dvh auto; /* Margine dinamico sopra e sotto in base all'altezza del viewport */
-    max-width: 90dvw; /* Limita la larghezza della sezione al 90% della larghezza del viewport */
-    border-radius: 2dvh; /* Bordi arrotondati dinamici */
-    box-shadow: 0 0.2dvh 0.8dvh rgba(0, 0, 0, 0.1); /* Ombra con dimensioni dinamiche */
+    padding: 2dvh; 
+    margin: 3dvh auto; 
+    max-width: 90dvw; 
+    border-radius: 2dvh; 
+    box-shadow: 0 0.2dvh 0.8dvh rgba(0, 0, 0, 0.1); 
 }
 
 section.intro h2 {
-    font-size: 3dvh; /* Dimensione del testo dinamica basata sull'altezza del viewport */
+    font-size: 3dvh; 
     color: #333;
-    text-align: center; /* Centra il testo all'interno del h2 */
-    margin: 0; /* Rimuove il margine di default */
+    text-align: center; 
+    margin: 0; 
 }
 
-/* Layout della griglia */
 section.container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 colonne di uguale larghezza */
-    gap: 20px; /* Distanza tra le colonne */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
     padding: 20px;
 }
 
-/* Stile per ogni elemento della griglia */
 section .contenuto {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Allinea il testo a sinistra */
-    box-sizing: border-box; /* Considera il padding nel calcolo delle dimensioni */
+    text-align: left; 
+    box-sizing: border-box; 
 }
 
 section .contenuto h1 {

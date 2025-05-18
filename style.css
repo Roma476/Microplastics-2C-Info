@@ -223,6 +223,7 @@ main {
 #progetti {
     position: relative;
     background-color: white;
+    overflow: visible;
 }
 
 #riga1 {
@@ -263,6 +264,7 @@ main {
     transform: translateY(-0.5dvh);
     box-shadow: 0 3dvh 2dvh rgba(0, 0, 0, 0.15);
     border-color: skyblue;
+    z-index: 3;
 }
 
 .coppia a {
@@ -289,6 +291,7 @@ main {
   bottom: 10px;       
   right: 10px;        
   display: inline-block;
+  z-index: 2;
 }
 
 #riga2 .tooltip-container {
@@ -296,6 +299,7 @@ main {
   top: 10px;         
   right: 10px;       
   display: inline-block;
+  z-index: 2;
 }
 
 .icon {
@@ -337,7 +341,7 @@ main {
   opacity: 0;
   transition: opacity 0.5s, transform 0.5s;
   transform: translateY(10px);
-  z-index: 99;
+  z-index: 3 !important;
 }
 
 .tooltip::after {
@@ -349,7 +353,7 @@ main {
   border-width: 5px;
   border-style: solid;
   border-color: #333 transparent transparent transparent;
-  z-index: 99;
+  z-index: 3 !important;
 }
 
 .tooltip-container:hover .tooltip {
@@ -357,7 +361,7 @@ main {
   opacity: 1;
   transform: translateY(0);
   animation: bounce 0.6s ease;
-  z-index: 99;
+  z-index: 3 !important;
 }
 
 @keyframes bounce {
