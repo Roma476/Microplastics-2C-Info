@@ -37,7 +37,6 @@ header {
     font-size: 3dvh;
 }
 
-
 /* PARTE 1*/
 
 section {
@@ -63,4 +62,91 @@ section {
 
 section h2 {
     font-size: 3dvh;
+}
+
+/* PARTE 2 */
+
+#sezione2 {
+    max-width: 70%;
+    margin: 5dvh auto;
+    padding: 3dvh;
+    background-color: #eaf6fc; 
+    border: 2px solid #c0e0f0;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 1.8dvh;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+#sezione2 h2 {
+    font-family: 'Jost', 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif;
+    font-size: 4dvh;
+}
+
+#sezione2 h3 {
+    font-size: 2.5dvh;
+    margin-top: 2dvh;
+    color: #1b3c59;
+}
+
+@media screen and (max-width: 1509px) {
+  #Titolo {
+    flex-direction: column;
+    gap: 4dvh;
+    padding: 3dvh;
+    text-align: center;
+  }
+
+  #Titolo img {
+    width: 45dvh;
+    height: 45dvh;
+  }
+
+  .Titolo-text h1 {
+    font-size: 6dvh;
+  }
+
+  .Titolo-text h2 {
+    font-size: 2.5dvh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #Titolo {
+    flex-direction: column;
+    gap: 3dvh;
+    padding: 2dvh;
+    text-align: center;
+  }
+
+  #Titolo img {
+    margin: 0;
+    width: 40dvh;
+    height: 40dvh;
+  }
+
+  .Titolo-text h1 {
+    font-size: 5dvh;
+  }
+
+  .Titolo-text h2 {
+    font-size: 2.2dvh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #Titolo img {
+    width: 30dvh;
+    height: 30dvh;
+  }
+
+  .Titolo-text h1 {
+    font-size: 4.2dvh;
+  }
+
+  .Titolo-text h2 {
+    font-size: 1.8dvh;
+  }
 }
