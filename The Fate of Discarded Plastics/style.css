@@ -1,0 +1,130 @@
+@import url('../style-comune.css');
+
+/*HEADER e TITOLO*/
+
+header {
+    height: 10dvh;
+    background-color: #e0f2ff;
+}
+
+#Titolo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10dvh;
+    background-color: #e0f2ff;
+}
+
+#Titolo img {
+    margin-left: 10dvh;
+    margin-bottom: 4dvh;
+    width: 50dvh;
+    height: 50dvh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Titolo-text {
+    display: flex;
+    flex-direction: column; 
+}
+
+.Titolo-text h1 {
+    font-size: 7dvh;
+}
+
+.Titolo-text h2 {
+    font-size: 3dvh;
+}
+
+/* PARTE DI AROSIO */
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: monospace;
+}
+#paragrafo_1{
+    position: absolute;
+    left: 5dvh;
+    right: 100dvh ;
+    width: 90dvh;
+    height: 50dvh; 
+    margin-top: 20dvh;
+    font-size: large;
+}
+#immagine_1 img{
+    position: absolute;
+    margin-top:10dvh;
+    width: 100dvh;
+    height: 50dvh;
+    right: 10dvh;
+
+}
+#paragrafo_2{
+    position: absolute;
+    right: 5dvh;
+    width: 100dvh;
+    height: 50dvh; 
+    margin-top: 80dvh;
+    font-size: large;
+}
+#immagine_2 img{
+    position: absolute;
+    margin-top:70dvh;
+    width: 90dvh;
+    height: 50dvh;
+    left: 10dvh;
+
+}
+#paragrafo_3{
+    position: absolute;
+    left: 5dvh;
+    right: 100dvh ;
+    width: 95dvh;
+    height: 50dvh; 
+    margin-top: 135dvh;
+    font-size: large;
+}
+#immagine_3 img{
+    position: absolute;
+    margin-top:130dvh;
+    width: 100dvh;
+    height: 50dvh;
+    right: 10dvh;
+}
+#paragrafo_4{
+    position: absolute;
+    right: 5dvh;
+    width: 100dvh;
+    height: 50dvh; 
+    margin-top: 200dvh;
+    font-size: large;
+}
+#immagine_4 img{
+    position: absolute;
+    margin-top:200dvh;
+    width: 90dvh;
+    height: 50dvh;
+    left: 10dvh;
+
+}
+#paragrafo_5{
+    position: absolute;
+    left: 5dvh;
+    width: 100dvh;
+    height: 50dvh; 
+    margin-top: 260dvh;
+    font-size: large;
+}
+#immagine_5 img{
+    position: absolute;
+    margin-top:200dvh;
+    width: 90dvh;
+    height: 50dvh;
+    left: 10dvh;
+
+}
