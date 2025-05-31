@@ -44,14 +44,15 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 2dvh;
-    margin: 3dvh auto;
-    max-width: 900px;
-    padding: 0 2dvh;
+    margin: 2rem auto;
+    max-width: 180dvh;
+    padding: 0;
 }
 
 .section h2 {
     background-color: #e0f2ff;
-    padding: 1.5dvh 3dvh;
+    padding: 2dvh;
+    font-size: 3dvh;
     border-radius: 12px;
     text-align: center;
     margin-bottom: 2dvh;
@@ -62,9 +63,12 @@ header {
     color: #003366;
 }
 
+.section h3 {
+    font-size: 2.5dvh;
+}
+
 .section h3, section p {
     text-align: center;
-    max-width: 85%;
     margin: 0 auto;
     color: #222;
 }

@@ -64,6 +64,31 @@ section h2 {
     font-size: 3dvh;
 }
 
+#lista_obiettivi {
+    display: flex;
+    flex-direction: row;
+}
+
+#lista_obiettivi p {
+  background-color: #e0f2ff;
+  padding: 1dvh;
+  margin: 0.5dvh;
+  border-radius: 0.7dvh;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lista p {
+    background-color: #e0f2ff;
+    padding: 1dvh;
+    margin: 0.5dvh;
+    border-radius: 0.7dvh;
+}
+
 /* PARTE 2 */
 
 #sezione2 {
