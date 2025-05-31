@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dodge le Microplastiche</title>
+  <style>
+    html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #f5f0e1;
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    user-select: none;
+    }
+    #gameWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;           
+    }
+    #livesContainer {
+      font-size: 28px;
+      margin-bottom: 10px;
+      user-select: none;
+      color: #333;
+      height: 36px;
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+    }
+    canvas {
+      border: 2px solid #333;
+      background-color: #f5f0e1;
+      display: block;
+    }
+    #infoContainer {
+      flex-shrink: 0;
+      width: 250px;
+      height: 39dvh;
+      background: #fff;
+      border: 2px solid #333;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      color: #333;
+      font-size: 16px;
+      user-select: none;
+    }
+    #infoContainer h3 {
+      margin-top: 0;
+      font-size: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    #ecoTip {
+      font-style: italic;
+      margin-top: 12px;
+      color: #2d7a2d;
+    }
+    #saveBtn {
+        margin-top: 15px;
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: #2c7a2d;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 96.5dvh;
+    }
+    #saveBtn:hover {
+        background-color: #256124;
+    }
+  </style>
+</head>
+<body>
+  <div id="livesContainer"></div>
+  <h1>🛢️DODGE THE MICROPLASTICS🛢️</h1>
+  <div id="gameWrapper">
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <div id="infoContainer">
+      <h3>Info Gioco</h3>
+      <p><strong>Difficoltà:</strong> <span id="difficulty">Facile</span></p>
+      <p><strong>Tempo:</strong> <span id="timePlayed">00:00</span></p>
+      <p><strong>Microplastiche Evitate:</strong> <span id="plasticsAvoided">0</span></p>
+      <p id="ecoTip">Ricicla sempre la plastica per aiutare il pianeta!</p>
+    </div>
+  </div>
+
+  <button id="saveBtn">Salva Screen</button>
+  <script src="dodge.js"></script>
+</body>
+</html>

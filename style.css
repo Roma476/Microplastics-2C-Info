@@ -376,6 +376,30 @@ main {
   }
 }
 
+/* TASTO PER MINIGIOCO */
+
+#minigioco-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 2.5dvh;
+    text-align: center;
+    text-decoration: none;
+    padding: 1dvh 1.5dvh;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#minigioco-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 /*FOOTER*/
 
