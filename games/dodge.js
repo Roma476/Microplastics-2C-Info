@@ -7,7 +7,7 @@ let gameOver = false;
 let isPaused = false;
 
 const playerSVG = new Image();
-playerSVG.src = "Player.svg";
+playerSVG.src = "player.svg";
 
 const plasticSVG = new Image();
 plasticSVG.src = "Plastic.svg";
