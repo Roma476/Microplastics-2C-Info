@@ -312,15 +312,20 @@ function loop() {
 }
 
 // Inizia il gioco solo al click sul pulsante "Start"
-playerSVG.onload = () => {
-  plasticSVG.onload = () => {
-    document.getElementById("startBtn").addEventListener("click", () => {
-      document.getElementById("startOverlay").style.display = "none";
-      startTime = Date.now();
-      loop();
-    });
-  };
-};
+document.getElementById("startBtn").addEventListener("click", () => {
+  document.getElementById("startOverlay").style.display = "none";
+  startTime = Date.now();
+  // assicura che le immagini siano già pronte
+  if (playerSVG.complete && plasticSVG.complete) {
+    loop();
+  } else {
+    Promise.all([
+      new Promise(res => playerSVG.complete ? res() : playerSVG.onload = res),
+      new Promise(res => plasticSVG.complete ? res() : plasticSVG.onload = res)
+    ]).then(loop);
+  }
+});
+
 
 document.getElementById("saveBtn").addEventListener("click", () => {
   const link = document.createElement("a");
