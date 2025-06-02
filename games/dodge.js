@@ -1,3 +1,19 @@
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+  // Nascondi il gioco e mostra messaggio di errore
+  document.body.innerHTML = `
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#f5f0e1; font-family: Arial, sans-serif; color:#333; text-align:center; padding:20px;">
+      <h1>🚫 Sorry!</h1>
+      <p>This game is not supported on mobile devices.</p>
+      <p>Please open it on a desktop or laptop computer.</p>
+    </div>
+  `;
+  throw new Error("Mobile device detected — game blocked");
+}
+
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
