@@ -85,6 +85,29 @@
                 <h3>ZERO WASTE ITALY</h3>
                 <p>Generating the least environmental impact possible, minimizing waste production, and reusing everything that can be reused: zero waste is the lifestyle focused on sustainability and, as the name suggests, aims for the goal of zero waste. This means, both at home and in business, committing to promote the reduction, reuse, and recycling of waste.</p>
               </div>
+
+                <div id="intro-galleria">
+                    <h3>Photo Gallery</h3>
+                    <p>
+                        Below you can explore a collection of real images related to ocean pollution, plastic accumulation, and the impact on marine life.
+                    </p>
+                </div>
+
+                <!-- Galleria -->
+                <div id="galleria">
+                    <img src="img.jpeg" width="450" height="250">
+                    <img src="img1.jpeg" width="450" height="250">
+                    <img src="https://www.zerowasteitaly.org/wp-content/uploads/2024/06/438094129_750772307243235_6773930373736167329_n.jpg" width="450" height="250"> 
+                    <img src="https://d2lxis1uiqe6st.cloudfront.net/wp-content/uploads/2023/06/plastic-sito.png" width="450" height="250">
+                    <img src="img2.jpeg" width="450" height="250">
+                </div>
+
+                <div id="lightbox" class="hidden">
+                    <span id="close-btn" onclick="closeLightbox()">✖</span>
+                    <button id="prev-btn" onclick="prevImage()">‹</button>
+                    <img id="lightbox-img" src="" alt="Preview">
+                    <button id="next-btn" onclick="nextImage()">›</button>
+                </div>
         </main>
 
         <footer>
@@ -92,5 +115,12 @@
             <p>THIS PROJECT WAS BROUGHT TO LIFE BY <i>2C INFO</i> - with the collaboration of teachers <i>Cavriani</i> and <i>Crivella</i></p>
         </footer>
         <script src="../script.js"></script>
+        <script>
+            if (window.matchMedia('(min-width: 769px)').matches) {
+                const script = document.createElement('script');
+                script.src = '../script.js';
+                document.body.appendChild(script);
+            }
+        </script>
     </body>
 </html>

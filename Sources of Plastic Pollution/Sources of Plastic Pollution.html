@@ -106,7 +106,14 @@
             <p>&copy; 2025 2C INFO - All rights reserved</p>
             <p>THIS PROJECT WAS BROUGHT TO LIFE BY <i>2C INFO</i> - with the collaboration of teachers <i>Cavriani</i> and <i>Crivella</i></p>
         </footer>
-         <script src="lightbox.js"></script>
-         <script src="../script.js"></script>
+        
+        <script src="lightbox.js"></script>
+        <script>
+            if (window.matchMedia('(min-width: 769px)').matches) {
+                const script = document.createElement('script');
+                script.src = '../script.js';
+                document.body.appendChild(script);
+            }
+        </script>
     </body>
 </html>

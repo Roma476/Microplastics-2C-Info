@@ -95,6 +95,12 @@
     </footer>
 
     <script src="lightbox.js"></script>
-    <script src="../script.js"></script>
+    <script>
+        if (window.matchMedia('(min-width: 769px)').matches) {
+            const script = document.createElement('script');
+            script.src = '../script.js';
+            document.body.appendChild(script);
+        }
+    </script>
 </body>
 </html>
