@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>B.I.S.I.O. - The Fate of Discarded Plastics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/icons/Terra.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Microplastics-2C-Info/style-comune.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -96,7 +101,9 @@
 
     <script src="lightbox.js"></script>
     <script>
-        if (window.matchMedia('(min-width: 769px)').matches) {
+        const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+        if (window.matchMedia('(min-width: 769px)').matches && !isMobile) {
             const script = document.createElement('script');
             script.src = '../script.js';
             document.body.appendChild(script);
