@@ -3,7 +3,7 @@ function isMobile() {
 }
 
 if (isMobile()) {
-  // Nascondi il gioco e mostra messaggio di errore
+  // Messaggio di Errore
   document.body.innerHTML = `
     <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#f5f0e1; font-family: Arial, sans-serif; color:#333; text-align:center; padding:20px;">
       <h1>🚫 Sorry!</h1>
@@ -315,9 +315,9 @@ function loop() {
   let plasticFrequency;
   const difficulty = updateDifficulty();
 
-  if (difficulty === "Easy") plasticFrequency = 60;       // una bottiglia al secondo
-  else if (difficulty === "Average") plasticFrequency = 40; // ogni ~0.66s
-  else plasticFrequency = 25;                              // ogni ~0.42s
+  if (difficulty === "Easy") plasticFrequency = 60;       
+  else if (difficulty === "Average") plasticFrequency = 40; 
+  else plasticFrequency = 25;                              
 
   if (frameCount % plasticFrequency === 0) {
     addPlastic();
@@ -327,11 +327,9 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-// Inizia il gioco solo al click sul pulsante "Start"
 document.getElementById("startBtn").addEventListener("click", () => {
   document.getElementById("startOverlay").style.display = "none";
   startTime = Date.now();
-  // assicura che le immagini siano già pronte
   if (playerSVG.complete && plasticSVG.complete) {
     loop();
   } else {
