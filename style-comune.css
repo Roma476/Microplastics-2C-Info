@@ -62,14 +62,33 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
-.logo-navbar {
-    height: 5dvh;
-    aspect-ratio: auto;
-    object-fit: contain;
-    margin-right: 2dvh;
+.topbar {
+    position: fixed;
+    top: 1dvh;
+    left: 2dvh;
+    display: flex;
+    align-items: center;
+    gap: 2dvh;
+    z-index: 10;
 }
 
+.logo-navbar {
+    margin-top: 2dvh;
+    height: 6dvh;
+    object-fit: contain;
+    border-radius: 0.7dvh;
+}
 
+.topbar nav {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10dvh;
+    padding: 2.5dvh;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.5dvh);
+    border-radius: 2dvh;
+}
 
 header {
     position: relative;
@@ -118,9 +137,22 @@ footer p {
         line-height: 1.2;
     }
 
+    .topbar {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2vw;
+        top: 1dvh;
+        left: 1dvh;
+        width: 95%;
+    }
+
     .logo-navbar {
-        height: 4dvh;
-        margin-right: 1dvh;
+        height: 4.5dvh;
+    }
+
+    .topbar nav {
+        gap: 4vw;
+        padding: 2dvh 4vw;
     }
 
     footer p {
